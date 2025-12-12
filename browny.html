@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <style>
         :root{
-            --bg:#e6f2ff;       /* Light blue */
-            --card:#fff7cc;     /* Soft yellow */
-            --accent:#ff8a00;
+            --bg:#e8f3ff;        /* soft light blue background */
+            --card:#cce4ff;      /* light blue card */
+            --accent:#ffd32a;    /* yellow accent */
             --text:#222;
             --muted:#555;
         }
+
         body{
             margin:0;
             font-family: Inter, Arial, sans-serif;
@@ -37,9 +38,10 @@
             max-width:560px;
             background:var(--card);
             border-radius:12px;
-            box-shadow:0 6px 28px rgba(12,12,20,0.1);
+            box-shadow:0 6px 28px rgba(0,0,0,0.1);
             padding:20px;
             margin-top:60px;
+            border:4px solid var(--accent); /* Yellow border */
         }
 
         .top{
@@ -48,27 +50,28 @@
             align-items:center;
         }
 
-        /* Replace emoji with image */
+        /* Image instead of emoji */
         .photo img{
             width:140px;
             height:140px;
             object-fit:cover;
             border-radius:12px;
+            border:3px solid var(--accent); /* yellow border */
         }
 
-        .title h2{ margin:0; font-size:26px; }
+        .title h2{ margin:0; font-size:26px; color:#003f7f; }
         .title p{ margin:6px 0 0 0; color:var(--muted); }
 
         .info{ margin-top:18px; }
         .row{ display:flex; gap:10px; margin:6px 0; }
-        .label{ width:110px; font-weight:700; color:var(--muted); }
+        .label{ width:110px; font-weight:700; color:#003f7f; }
         .value{ color:var(--text); }
 
         .back{
             display:inline-block;
             margin-top:18px;
             padding:10px 14px;
-            background:#333;
+            background:#003f7f;
             color:#fff;
             text-decoration:none;
             border-radius:8px;
