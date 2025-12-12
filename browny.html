@@ -24,14 +24,11 @@
             flex-direction:column;  
         }  
 
-        /* Dog emoji/dog image on main page */  
+        /* Dog emoji on main page */  
         .main-emoji{  
+            font-size:60px;  
             text-align:center;  
             margin-bottom:14px;  
-        }  
-        .main-emoji img{  
-            width:80px;  
-            height:auto;  
         }  
 
         .card{  
@@ -69,12 +66,6 @@
             font-size:48px;  
             user-select:none;  
         }  
-        .photo img{  
-            width:100%;  
-            height:100%;  
-            object-fit:cover;  
-            border-radius:12px;  
-        }  
         .title h2{ margin:0; font-size:26px; }  
         .title p{ margin:6px 0 0 0; color:var(--muted); }  
         .info{ margin-top:18px; }  
@@ -93,27 +84,22 @@
         @media (max-width:480px){  
             .top{ flex-direction:column; align-items:center; text-align:center; }  
             .label{ width:100px; }  
-            .photo{ width:120px; height:120px; }  
+            .photo{ width:120px; height:120px; font-size:40px; }  
         }  
     </style>  
 </head>  
 <body>  
 
-    <!-- Dog image on main page -->  
-    <div class="main-emoji">
-        <img src="dog.png" alt="Dog">
-    </div>
+    <!-- Dog emoji on main page -->  
+    <div class="main-emoji">🐶</div>
 
     <div class="card">  
 
         <!-- Logo on top right -->  
-        <img class="logo" src="logo.png" alt="Logo">
+        <img class="logo" src="your-logo.png" alt="Logo">
 
         <div class="top">  
-            <div class="photo">
-                <img src="dog.png" alt="Dog Photo">
-            </div>  
-
+            <div class="photo">🐶</div>  
             <div class="title">  
                 <h2>Name-Browny</h2>  
                 <p>Breed-Golden Retriever • Gender-Male • Age-3yr</p>  
@@ -137,4 +123,4 @@
     </div>
 
 </body>  
-</html>
+    </html>
